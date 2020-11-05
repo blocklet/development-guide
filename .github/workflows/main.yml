@@ -19,7 +19,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Test
-      run: make init
+      run: make github-action-test
 
     - name: Deploy
       env:

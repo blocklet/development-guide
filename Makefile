@@ -20,7 +20,7 @@ clean:
 
 deploy:
 	@echo "Building and publishing the documenation..."
-	@gem install travis
+	@sudo gem install travis
 	@.makefiles/trigger_registry_build.sh
 
 run:
@@ -33,6 +33,10 @@ redep:
 	@yarn
 	@git checkout yarn.lock
 
+github-action-test:
+	@sudo npm install -g yarn
+	@yarn --force
+
 serve: build
 	@yarn serve
 
@@ -41,4 +45,4 @@ travis: init
 
 include .makefiles/release.mk
 
-.PHONY: all clean $(DIRS) build run watch
+.PHONY: all clean $(DIRS) build run watch github-action-test

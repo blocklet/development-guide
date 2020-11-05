@@ -8,7 +8,7 @@ git config --local user.email "wangshijun2010@gmail.com"
 
 make release
 npm config set '//registry.npmjs.org/:_authToken' "${NPM_TOKEN}"
-npm install -g @abtnode/cli
+sudo npm install -g @abtnode/cli
 
 echo "publishing blocklet development guide blocklet..."
 rm -rf public && rm -rf .cache
