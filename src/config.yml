@@ -1,0 +1,20 @@
+gitRepo: blocklet/development-guide
+srcPath: src
+categories:
+  abtnode:
+    basePath: /
+    title: Development Guide
+    link: /developer
+    priority: 999
+    sidebar:
+      Developer Guide:
+        url: /developer
+        links:
+          - /developer/blocklet-spec
+          - /developer/static-blocklet
+          - /developer/dapp-blocklet
+          - /developer/blocklet-hooks
+          - /developer/bundle-blocklet
+          - /developer/publish-blocklet
+        locales:
+          zh: 开发者指南
