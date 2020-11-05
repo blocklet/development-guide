@@ -1,6 +1,6 @@
 {
   "name": "blocklet-development-guide",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Blocklet development guide, a help documentation for quickly get started to develop a blocklet.",
   "main": "index.js",
   "publishConfig": {
