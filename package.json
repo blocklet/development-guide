@@ -1,0 +1,68 @@
+{
+  "name": "blocklet-development-guide",
+  "version": "0.0.1",
+  "description": "Blocklet development guide, a help documentation for quickly get started to develop a blocklet.",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "public/",
+    "screenshots/",
+    "blocklet.md"
+  ],
+  "directories": {
+    "doc": "docs"
+  },
+  "keywords": [
+    "Docs",
+    "ABTNode"
+  ],
+  "scripts": {
+    "start": "gatsby develop",
+    "build": "NODE_ENV=production GATSBY_APP_DOMAIN=docs.arcblock.io gatsby build",
+    "deploy": "gh-pages -d public",
+    "serve": "gatsby serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArcBlock/abtnode-docs.git"
+  },
+  "author": "wangshijun <wangshijun2010@gmail.com> (http://github.com/wangshijun)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ArcBlock/abtnode-docs-power-user/issues"
+  },
+  "homepage": "https://github.com/ArcBlock/abtnode-docs-power-user#readme",
+  "dependencies": {
+    "@arcblock/gatsby-theme-docs": "^7.28.3",
+    "axios": "^0.20.0",
+    "fs-extra": "^8.1.0",
+    "gatsby": "2.24.8",
+    "gatsby-plugin-netlify-cache": "^1.2.0",
+    "gray-matter": "^4.0.2",
+    "hast-util-select": "^3.0.1",
+    "mdast-util-to-hast": "^6.0.2",
+    "remark": "^11.0.1",
+    "yaml": "^1.7.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.1.1"
+  },
+  "blocklet": {
+    "title": "Blocklet Development Guide",
+    "main": "public",
+    "group": "static",
+    "color": "primary",
+    "provider": "arcblock",
+    "documentation": "https://docs.arcblock.io",
+    "support": "support@arcblock.io",
+    "community": "https://gitter.im/ArcBlock/community",
+    "capabilities": {
+      "dynamicPathPrefix": false
+    },
+    "config_url": "",
+    "public_url": "/en",
+    "admin_url": ""
+  }
+}

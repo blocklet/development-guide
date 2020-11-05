@@ -102,3 +102,16 @@ dist
 
 # TernJS port file
 .tern-port
+
+
+.tmp.mk
+node_modules
+.idea
+.DS_Store
+.env
+.cache
+public
+*.log
+
+_blocklet
+blocklet.js
