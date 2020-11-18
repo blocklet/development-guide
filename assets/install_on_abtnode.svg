@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="168px" height="32px" viewBox="0 0 1680 320">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="1680" height="320" fill="#44cdc6" rx="40"/>
+    <text fill="#FFF" font-family="Arial,Helvetica,sans-serif" font-size="140" opacity="1"><tspan x="755" y="210">on ABT Node</tspan></text>
+    <text fill="#FFF" font-family="Arial,Helvetica,sans-serif" font-size="140"><tspan x="350" y="210">Install</tspan></text>
+    <g stroke="#000" id="svg_7" fill-rule="evenodd" fill="none">
+      <path stroke="#FFF" stroke-width="10" id="svg_8" d="m87.5,107.78045l92.14838,-53.20345l92.15263,53.20345l0,106.4069l-92.14838,53.20345l-92.15263,-53.20345l0,-106.4069zm92.14838,-53.20345l0,212.81641m-92.14838,-159.61035l184.30101,106.4069m-184.30101,0l184.30101,-106.4069"/>
+      <path stroke="#FFF" stroke-width="10" id="svg_9" d="m179.64838,214.18736l46.07845,-26.60173l-46.07419,-79.80518l-46.07419,79.80518l46.06993,26.60173z"/>
+    </g>
+  </g>
+</svg>
