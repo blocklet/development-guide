@@ -4,6 +4,7 @@ description: '创建静态 Blocklet'
 keywords: 'abtnode, blocklet'
 author: 'nate'
 layout: 'documentation'
+category: ''
 tags:
   - 'abtnode'
 ---

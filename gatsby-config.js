@@ -2,8 +2,10 @@ require('dotenv').config();
 
 const path = require('path');
 const { version } = require('./package.json');
+const pathPrefix = '/blocklet/';
 
 module.exports = {
+  pathPrefix,
   plugins: [
     {
       resolve: require.resolve('@arcblock/www'),
@@ -22,7 +24,7 @@ module.exports = {
           sidebarWidth: 360,
         },
         algoliaSearch: {
-          enabled: process.env.NODE_ENV === 'production',
+          enabled: false,
           appId: process.env.GATSBY_ALGOLIA_APP_ID,
           adminKey: process.env.GATSBY_ALGOLIA_ADMIN_KEY,
           searchKey: process.env.GATSBY_ALGOLIA_SEARCH_KEY,
@@ -30,6 +32,15 @@ module.exports = {
         },
         navItems: [],
         extraPlugins: [],
+      },
+    },
+    {
+      resolve: require.resolve('@arcblock/gatsby-i18n-redirect'),
+      options: {
+        languages: ['en', 'zh'],
+        cookieName: 'nf_lang',
+        pathPrefix,
+        pathSuffix: '/',
       },
     },
     // Speed up netlify build

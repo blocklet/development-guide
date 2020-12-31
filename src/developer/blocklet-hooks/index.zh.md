@@ -4,6 +4,7 @@ description: 'Blocklet 生命周期钩子'
 keywords: 'abtnode, blocklet'
 author: 'wangshijun'
 layout: 'documentation'
+category: ''
 tags:
   - 'abtnode'
 ---

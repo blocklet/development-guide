@@ -1,6 +1,6 @@
 {
   "name": "blocklet-development-guide",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Blocklet development guide, a help documentation for quickly get started to develop a blocklet.",
   "main": "index.js",
   "publishConfig": {
@@ -19,9 +19,12 @@
     "ABTNode"
   ],
   "scripts": {
+    "clean": "rm -rf public .cache .blocklet",
     "start": "gatsby develop",
-    "build": "NODE_ENV=production GATSBY_APP_DOMAIN=docs.arcblock.io gatsby build",
-    "deploy": "gh-pages -d public",
+    "build": "NODE_ENV=production GATSBY_APP_DOMAIN=docs.arcblock.io gatsby build --prefix-paths",
+    "build:dir": "mv public public_tmp && mkdir public && mv public_tmp public/blocklet",
+    "bundle": "npm run clean && npm run build && npm run build:dir && abtnode bundle --create-release",
+    "deploy": "npm run bundle && abtnode deploy .blocklet/bundle --skip-hooks",
     "serve": "gatsby serve"
   },
   "repository": {
@@ -35,7 +38,8 @@
   },
   "homepage": "https://github.com/ArcBlock/abtnode-docs-power-user#readme",
   "dependencies": {
-    "@arcblock/gatsby-theme-docs": "^7.28.3",
+    "@arcblock/gatsby-i18n-redirect": "^7.33.1",
+    "@arcblock/gatsby-theme-docs": "^7.33.2",
     "axios": "^0.20.0",
     "fs-extra": "^8.1.0",
     "gatsby": "2.24.8",
@@ -48,21 +52,5 @@
   },
   "devDependencies": {
     "gh-pages": "^2.1.1"
-  },
-  "blocklet": {
-    "title": "Blocklet Development Guide",
-    "main": "public",
-    "group": "static",
-    "color": "primary",
-    "provider": "arcblock",
-    "documentation": "https://docs.arcblock.io",
-    "support": "support@arcblock.io",
-    "community": "https://gitter.im/ArcBlock/community",
-    "capabilities": {
-      "dynamicPathPrefix": false
-    },
-    "config_url": "",
-    "public_url": "/en",
-    "admin_url": ""
   }
 }

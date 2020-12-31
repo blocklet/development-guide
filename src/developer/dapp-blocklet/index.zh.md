@@ -4,6 +4,7 @@ description: '创建 DApp Blocklets'
 keywords: 'abtnode, blocklet'
 author: 'nate'
 layout: 'documentation'
+category: ''
 tags:
   - 'abtnode'
 ---

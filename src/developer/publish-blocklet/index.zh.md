@@ -4,6 +4,7 @@ description: '发布 Blocklet'
 keywords: 'abtnode, blocklet'
 author: 'wangshijun, nate'
 layout: 'documentation'
+category: ''
 tags:
   - 'abtnode'
 ---

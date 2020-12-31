@@ -4,6 +4,7 @@ description: 'Blocklet 规范'
 keywords: 'abtnode,blocklet,specification'
 author: zhenqiang
 layout: documentation
+category: ''
 tags:
   - abtnode
   - blocklet

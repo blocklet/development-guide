@@ -4,6 +4,7 @@ description: 'Blocklet Hooks'
 keywords: 'abtnode, blocklet'
 author: 'wangshijun'
 layout: 'documentation'
+category: ''
 tags:
   - 'abtnode'
 ---

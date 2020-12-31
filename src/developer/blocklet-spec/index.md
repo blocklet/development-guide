@@ -4,6 +4,7 @@ description: 'Blocklet Specification'
 keywords: 'abtnode,blocklet,specification'
 author: 'zhenqiang, tigeryu8900'
 layout: documentation
+category: ''
 tags:
   - abtnode
   - blocklet
