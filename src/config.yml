@@ -4,7 +4,7 @@ categories:
   abtnode:
     basePath: /
     title: Development Guide
-    link: /developer
+    link: /
     priority: 999
     sidebar:
       Developer Guide:

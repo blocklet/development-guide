@@ -4,6 +4,7 @@ description: 'Create Static Blocklets'
 keywords: 'abtnode, blocklet'
 author: 'tigeryu8900'
 layout: 'documentation'
+category: ''
 tags:
   - 'abtnode'
 ---

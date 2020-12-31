@@ -1,0 +1,42 @@
+name: blocklet-development-guide
+title: Blocklet Development Guide
+version: 0.0.2
+description: >-
+  Blocklet development guide, a help documentation for quickly get started to
+  develop a blocklet.
+main: public
+files:
+  - public/
+  - screenshots/
+  - blocklet.md
+keywords:
+  - Docs
+  - ABTNode
+repository:
+  type: git
+  url: 'git+https://github.com/ArcBlock/abtnode-docs.git'
+author:
+  name: wangshijun
+  email: wangshijun2010@gmail.com
+  url: 'http://github.com/wangshijun'
+license: MIT
+homepage: 'https://github.com/ArcBlock/abtnode-docs-power-user#readme'
+group: static
+documentation: 'https://docs.arcblock.io'
+support: support@arcblock.io
+community: 'https://gitter.im/ArcBlock/community'
+did: z8ia1DAf4a2kxsjxggJPMABsWTqVkBwUcWZNh
+timeout:
+  start: 10
+interfaces:
+  - type: web
+    name: publicUrl
+    path: /
+    prefix: /blocklet
+    port: BLOCKLET_PORT
+    protocol: tcp
+environments: []
+screenshots:
+  - 0-home.png
+specVersion: 1.0.2
+scripts: {}

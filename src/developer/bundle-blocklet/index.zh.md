@@ -4,6 +4,7 @@ description: '打包 Blocklet'
 keywords: 'abtnode, blocklet'
 author: 'wangshijun'
 layout: 'documentation'
+category: ''
 tags:
   - 'abtnode'
 ---
