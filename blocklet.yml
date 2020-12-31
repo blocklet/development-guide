@@ -1,6 +1,5 @@
 name: blocklet-development-guide
-title: Blocklet Development Guide
-version: 0.0.2
+version: 0.0.3
 description: >-
   Blocklet development guide, a help documentation for quickly get started to
   develop a blocklet.
@@ -21,6 +20,7 @@ author:
   url: 'http://github.com/wangshijun'
 license: MIT
 homepage: 'https://github.com/ArcBlock/abtnode-docs-power-user#readme'
+title: Blocklet Development Guide
 group: static
 documentation: 'https://docs.arcblock.io'
 support: support@arcblock.io
