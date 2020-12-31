@@ -11,10 +11,8 @@ npm config set '//registry.npmjs.org/:_authToken' "${NPM_TOKEN}"
 sudo npm install -g @abtnode/cli
 
 echo "publishing blocklet development guide blocklet..."
-rm -rf public && rm -rf .cache
-yarn build
-rm -f public/*.map
-NODE_ENV=production abtnode bundle && npm publish .blocklet/bundle --access=public
+npm run bundle
+npm publish .blocklet/bundle --access=public
 
 # deploy to remote ABT Node
 set +e
