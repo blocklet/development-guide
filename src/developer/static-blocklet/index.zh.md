@@ -100,7 +100,7 @@ tags:
 
 ## 第五步，部署 Blocklet
 
-完成上面的步骤之后，我们只需来到项目的根目录下执行部署命令 `abtnode deploy .` 即可完成 Blocklet 的部署。
+完成上面的步骤之后，我们只需来到项目的根目录下执行部署命令 `blocklet deploy .` 即可完成 Blocklet 的部署。
 
 > 部署前请确保 ABT 节点已经成功运行
 

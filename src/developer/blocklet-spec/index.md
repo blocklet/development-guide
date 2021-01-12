@@ -104,7 +104,7 @@ After understanding some basic Blocklet concepts and protocols, it's time to lea
 
 ## Initialize the blocklet
 
-ABT Node CLI provides `abtnode blocklet:init` command to help developers quickly create a blocklet project. This command will help developers create related configuration files and directories.
+ABT Node CLI provides `blocklet init` command to help developers quickly create a blocklet project. This command will help developers create related configuration files and directories.
 
 ### Blocklet project structure
 
@@ -171,7 +171,7 @@ These variables mean what their names indicate. During the development of a bloc
 
 ## How to package Blocklet?
 
-After the blocklet is created, the code needs to be packaged for deployment. The ABT CLI provides the `abtnode bundle` command to package the source code.
+After the blocklet is created, the code needs to be packaged for deployment. The ABT CLI provides the `blocklet bundle` command to package the source code.
 
 ### Test in ABT Node
 
@@ -179,7 +179,7 @@ In the blocklet declaration cycle section, we mentioned the Deploy phase. This p
 
 ## How to release Blocklet?
 
-First, publish the developed Blocklet to NPM. The `abtnode bundle` command will put the packaged code in the `_blocklet` directory of the current directory. When publishing or testing, you need to package and release the code in `_blocklet`.
+First, publish the developed Blocklet to NPM. The `blocklet bundle` command will put the packaged code in the `_blocklet` directory of the current directory. When publishing or testing, you need to package and release the code in `_blocklet`.
 
 Then fork the https://github.com/arcblock/blocklets repository (create Github account first if you don't have one).
 Modify the project's registry.yml file and put your blocklet NPM package address in the registry.yml list. Then give a pull request to ArcBlock’s repository: https://github.com/arcblock/blocklets.

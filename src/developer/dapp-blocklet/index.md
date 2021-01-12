@@ -57,7 +57,7 @@ After the generated template project is successfully configured, it can run loca
 
 ## Step 3: Deploy DApp Blocklet
 
-First, press `Ctrl+C` to stop the local test process, and then execute the `abtnode deploy .` command.
+First, press `Ctrl+C` to stop the local test process, and then execute the `blocklet deploy .` command.
 
 ![](./images/create-dapp-blocklet-5.png)
 

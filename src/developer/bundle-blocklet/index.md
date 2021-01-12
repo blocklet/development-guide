@@ -17,10 +17,10 @@ If your blocklet is built with front-end framework such as React.js, Vue.js, you
 
 #### 1. Get Blocklet DID
 
-Go to your blocklet folder and run `abtnode blocklet:meta | grep did` to get the blocklet did:
+Go to your blocklet folder and run `blocklet meta | grep did` to get the blocklet did:
 
 ```shell
-abtnode blocklet:meta | grep did
+blocklet meta | grep did
 did:         z8iZn18zGRm5veEdhmrS2FRrUyw5ZAQcewVMH
 ```
 
@@ -134,7 +134,7 @@ axios.interceptors.request.use(config => {
 Use the following script to bundle the backend:
 
 ```json
-"build:server": "DEBUG=@abtnode/* NODE_ENV=production abtnode bundle -w api/webpack.blocklet.js",
+"build:server": "DEBUG=@abtnode/* NODE_ENV=production blocklet bundle -w api/webpack.blocklet.js",
 ```
 
 Since we are using webpack internally to bundle the blocklet backend, you can customize the configuration:
