@@ -104,7 +104,7 @@ hook 其实是一些 Shell 脚本，而这些脚本可能会引用 Blocklet 中�
 
 ## 初始化 Blocklet
 
-ABT Node CLI 提供了 `abtnode blocklet:init` 命令来帮助开发者快速创建一个 Blocklet 项目，这个命令会帮助开发者创建相关的配置文件和目录。
+ABT Node CLI 提供了 `blocklet init` 命令来帮助开发者快速创建一个 Blocklet 项目，这个命令会帮助开发者创建相关的配置文件和目录。
 
 ### 代码结构
 
@@ -171,7 +171,7 @@ Blocklet 所有的描述信息都放在 blocklet.json 文件中。
 
 ## 如何打包 Blocklet？
 
-Blocklet 开发完成后需要将代码打包才能进行部署，ABT CLI 提供了 `abtnode bundle` 命令来打包源码。
+Blocklet 开发完成后需要将代码打包才能进行部署，ABT CLI 提供了 `blocklet bundle` 命令来打包源码。
 
 ### 在 ABT 节点中测试
 
@@ -179,7 +179,7 @@ Blocklet 开发完成后需要将代码打包才能进行部署，ABT CLI 提供
 
 ## 如何发布 Blocklet？
 
-首先，将开发好的 Blocklet 发布到 NPM。`abtnode bundle` 命令会将打包好的代码放到当前目录的 `_blocklet` 目录中，在发布或者测试时，需要将 `_blocklet` 中代码打包发布。
+首先，将开发好的 Blocklet 发布到 NPM。`blocklet bundle` 命令会将打包好的代码放到当前目录的 `_blocklet` 目录中，在发布或者测试时，需要将 `_blocklet` 中代码打包发布。
 
 然后分叉 https://github.com/arcblock/blocklets 仓库，（如果没有 Github 账号的话，需要先注册 Github 账号）。修改项目的 registry.yml 文件，将自己的 Blocklet NPM 包地址放到 registry.yml 列表中。然后给 ArcBlock 的仓库： https://github.com/arcblock/blocklets 提一个 Pull Request。
 

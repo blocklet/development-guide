@@ -101,7 +101,7 @@ Parameter Description:
 
 ## Step 5: Deploy Blocklet
 
-After completing the above steps, we only need to go to the main directory of the project and execute the deployment command `abtnode deploy .` to complete the deployment of the blocklet.
+After completing the above steps, we only need to go to the main directory of the project and execute the deployment command `blocklet deploy .` to complete the deployment of the blocklet.
 
 > Please make sure that ABT Node can run before deploying.
 

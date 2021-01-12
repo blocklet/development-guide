@@ -52,7 +52,7 @@ cd dapp-blocklet-demo
 
 ## 第三步，部署 Dapp Blocklet
 
-首先让我们 `Ctrl+C` 停掉刚刚的本地测试进程，然后执行 `abtnode deploy .` 命令，看看会发生什么:
+首先让我们 `Ctrl+C` 停掉刚刚的本地测试进程，然后执行 `blocklet deploy .` 命令，看看会发生什么:
 
 ![](./images/create-dapp-blocklet-5.png)
 
