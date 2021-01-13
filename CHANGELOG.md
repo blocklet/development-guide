@@ -1,3 +1,7 @@
+## 0.0.5 (January 13, 2021)
+
+- no longer publish to npm scripts and fix deploy to abtnode bug
+
 ## 0.0.4 (January 12, 2021)
 
 - replace abtnode command with blocklet command in docs
