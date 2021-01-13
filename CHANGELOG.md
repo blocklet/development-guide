@@ -1,3 +1,7 @@
+## 0.0.6 (January 13, 2021)
+
+- fix deploy to aws node scripts
+
 ## 0.0.5 (January 13, 2021)
 
 - no longer publish to npm scripts and fix deploy to abtnode bug
