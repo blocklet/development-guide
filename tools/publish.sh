@@ -27,7 +27,7 @@ if [ "${ALIYUN_NODE_ENDPOINT}" != "" ]; then
     curl -X POST -H 'Content-type: application/json' --data "{\"text\":\":x: Faild to deploy ${NAME} v${VERSION} to ${ALIYUN_NODE_ENDPOINT}\"}" ${SLACK_WEBHOOK}
   fi
 fi
-if [ "${AWS_ENDPOINT}" != "" ]; then
+if [ "${AWS_NODE_ENDPOINT}" != "" ]; then
   blocklet deploy .blocklet/bundle --endpoint ${AWS_NODE_ENDPOINT} --access-key ${AWS_NODE_ACCESS_KEY} --access-secret ${AWS_NODE_ACCESS_SECRET} --skip-hooks
   if [ $? == 0 ]; then
     echo "deploy to ${AWS_NODE_ENDPOINT} success"
